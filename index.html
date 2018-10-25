@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="вёрстка, лендинг, визитка, создание, проект, код, стиль, сайт">
+    <meta name="description" content="Вёрстка адаптивных сайтов на HTML + CSS">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Сайт разработчика</title>
+</head>
+
+<body>
+   
+    <header>
+        
+        
+       <nav>
+          
+        
+         <table>
+             
+             <tr>
+                 
+                 <td class = "navtext"><a href="index.html">RY Web-designer</a></td>
+                 <td class = "menu1"><a href="portfolio.html">PORTFOLIO</a></td>
+                 <td class = "menu"><a href="#anchor">CONTACTS</a></td>
+                 
+                 
+             </tr>
+             
+         </table>
+           
+       </nav>
+   
+    </header>
+    <div class = "back">
+       
+        
+        <table class = "offers">
+            
+            <tr>
+                
+                
+                <td class = "page1">
+                    <h2>Адаптивный лендинг</h2>
+                    
+                    <ul>
+                        
+                        <li>Адаптивный</li>
+                        <li>Оригинальный</li>
+                        <li>Качественный</li>
+                        <li>Быстрый</li>
+                        <li class = "cost">от 4000 рублей</li>
+                        <li class="gradient-wrap"><a class="gradient-btn" href="#anchor">Заказать</a></li>
+                        
+                    </ul>
+                    
+                    
+                </td>
+                
+                
+                
+                <td class = "page2">
+                    
+                    <h2>Адаптивная визитка</h2>
+                    
+                    <ul>
+                        
+                        <li>Адаптивный</li>
+                        <li>Оригинальный</li>
+                        <li>Информативный</li>
+                        <li>Качественный</li>
+                        <li class = "cost" >от 3000 рублей</li>
+                        <li class="gradient-wrap"><a class="gradient-btn" href="#anchor">Заказать</a></li>
+                        
+                    </ul>
+                    
+                </td>
+                
+                
+            </tr>
+            
+        </table>
+        
+        
+    
+    <div class = "advantages">
+        
+        <table>
+           
+           <tr>
+               <td class = "tablehead" colspan="3"><h2>Почему стоит выбрать именно меня?</h2></td>
+               
+           </tr>
+            
+            <tr>
+               
+                
+                <td>
+                <ul>
+                <li><img class = "anim1" src="img/code.png" alt = ""></li>
+                <li>Валидный код</li>
+                </ul>
+                </td>
+                
+                <td>
+                <ul>
+                <li><img class = "anim" src="img/html.png" alt = ""></li>
+                <li>Аккуратная разметка</li>
+                </ul>
+                </td>
+                
+                <td>
+                <ul>
+                <li><img class = "anim" src="img/css.png" alt= ""></li>
+                <li>Живые стили</li>
+                </ul>
+                </td>
+                
+                
+  
+                
+            </tr>
+            
+           
+            
+        </table>
+        
+    </div>
+    
+    
+    
+    <div class = "info">
+        
+        <h1>Обо мне</h1>
+        
+        <p>Меня зовут Родион. Я - начинающий веб-дизайнер. На данный момент активно работаю с адаптивной HTML + CSS вёрсткой. Практикуюсь в различных проектах. Моё портфолио пока что пустовато, но вы можете оставить там свой след, заказав у меня создание Landing page или же сайта-визитки.</p>
+        
+        
+    </div>
+    </div>
+    
+<div class = "reply">
+    
+    <h1>Для связи и заказа</h1>
+    
+    <table>
+        
+        <tr id = "anchor">
+            
+            <td ><a href="https://vk.com/jblwins" target="_blank"><img class = "socials" src="img/vk.png" alt=""></a></td>
+            <td ><a href = "https://www.instagram.com/yakovlev_rrr/"  target="_blank"><img class = "socials" src="img/inst.png" alt=""></a></td>
+            
+        </tr>
+        
+        <tr>
+            
+            <td colspan="2" class = "num">+79132656863</td>
+            
+            
+        </tr>
+        
+        <tr>
+            
+          <td colspan="2" class = "email">rodionyakovlev25@gmail.com</td>
+            
+        </tr>
+        
+    </table>
+    
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>
+ $(document).ready(function(){
+    $(".menu, .gradient-wrap").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1100);
+    });
+});
+</script>
+
+</body>
+</html>

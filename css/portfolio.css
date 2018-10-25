@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    background-color: black;
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+
+nav table {
+    width: 100%;
+}
+
+.navtext {
+    font-size: 70px;
+}
+
+.menu, .menu1 {
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.menu, .menu1, a:hover {
+    color: red;
+    transition-duration: 0.7s;
+}
+
+.navtext a {
+    color: #fff;
+}
+
+.menu, .menu1, a {
+    color: #fff;
+}
+
+.reply {
+    color: white;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.reply table {
+    margin: 0 auto;
+    border-spacing: 40px 0;
+}
+
+
+.socials {
+    padding: 10px 10px;
+}
+
+.socials:hover {
+    transition-duration: 1s;
+    transform: rotate(360deg);
+}
+
+
+.num, .email {
+    text-align: center;
+    font-size: 20px;
+}
+
+h1 {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+
+.portfolio {
+    width:100%;
+    margin: 0 auto;
+}
+
+.portfolio table {
+    text-align: center;
+    margin: 100px auto 100px;
+}
+
+.portfolio img:hover{
+    transition-duration: 1s;
+    transform: scale(1.1, 1.1)
+    
+}
+
+@media screen and (min-width: 319px) and (max-width:480px) {
+  
+    
+    nav table {
+        max-width: 100%;
+        width:100%;
+    }
+    .navtext, .menu, .menu1 {
+        font-size: 16px;
+    }
+
+    .reply {
+        margin: 20px auto;
+    }
+    
+    .reply table {
+        border-spacing: 0 20px;
+        
+    }
+    
+    .reply td {
+         display: block;
+        margin: 20px 0;
+    }
+    
+    .reply td {
+        border: 0px dotted #b1b1b1;
+        border-radius: 50%;
+        padding: 2px 2px;
+}
+   
+
+    .socials {
+        padding: 10px 10px;
+}
+
+    .socials:hover {
+        transition-duration: 1s;
+        transform: rotate(360deg);
+}
+
+
+    .num, .email {
+        text-align: center;
+        font-size: 20px;
+}
+  
+    h1 {
+        font-size: 30px;
+    }
+    
+    
+}
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    
+    .navtext, .menu, .menu1 {
+        font-size: 40px;
+    }
+}
+
